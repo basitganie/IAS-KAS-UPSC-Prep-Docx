@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IAS Prep Documents</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>IAS, KAS, UPSC Preparation</h1>
+        <nav>
+            <a href="#view-pdfs">View PDFs</a>
+            <a href="#upload-pdf">Upload PDF</a>
+            <a href="#prep-info">Preparation Info</a>
+        </nav>
+    </header>
+
+    <section id="view-pdfs">
+        <h2>View PDFs</h2>
+        <ul id="pdf-list">
+            <!-- PDF links will be dynamically inserted here -->
+        </ul>
+    </section>
+
+    <section id="upload-pdf">
+        <h2>Upload PDF</h2>
+        <input type="file" id="fileInput" />
+        <button onclick="uploadFile()">Upload</button>
+        <p id="uploadStatus"></p>
+    </section>
+
+    <section id="prep-info">
+        <h2>Preparation Information</h2>
+        <p>Content about IAS, KAS, and UPSC preparation.</p>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
