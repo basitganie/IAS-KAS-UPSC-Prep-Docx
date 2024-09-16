@@ -4,37 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IAS Prep Documents</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>IAS, KAS, UPSC Preparation</h1>
-        <nav>
-            <a href="#view-pdfs">View PDFs</a>
-            <a href="#upload-pdf">Upload PDF</a>
-            <a href="#prep-info">Preparation Info</a>
-        </nav>
-    </header>
+    <div class="container">
+        <header class="text-center my-4">
+            <h1>IAS, KAS, UPSC Preparation</h1>
+            <nav>
+                <a class="btn btn-primary m-2" href="#view-pdfs">View PDFs</a>
+                <a class="btn btn-secondary m-2" href="#upload-pdf">Upload PDF</a>
+                <a class="btn btn-info m-2" href="#prep-info">Preparation Info</a>
+            </nav>
+        </header>
 
-    <section id="view-pdfs">
-        <h2>View PDFs</h2>
-        <ul id="pdf-list">
-            <!-- PDF links will be dynamically inserted here -->
-        </ul>
-    </section>
+        <!-- View PDFs Section -->
+        <section id="view-pdfs" class="my-4">
+            <h2>View PDFs</h2>
+            <ul id="pdf-list" class="list-group">
+                <!-- PDF links will be dynamically inserted here -->
+            </ul>
+        </section>
 
-    <section id="upload-pdf">
-        <h2>Upload PDF</h2>
-        <input type="file" id="fileInput" />
-        <button onclick="uploadFile()">Upload</button>
-        <p id="uploadStatus"></p>
-    </section>
+        <!-- Upload PDFs Section -->
+        <section id="upload-pdf" class="my-4">
+            <h2>Upload PDF</h2>
+            <div class="mb-3">
+                <input class="form-control" type="file" id="fileInput" />
+            </div>
+            <button class="btn btn-success" onclick="uploadFile()">Upload</button>
+            <p id="uploadStatus"></p>
+        </section>
 
-    <section id="prep-info">
-        <h2>Preparation Information</h2>
-        <p>Content about IAS, KAS, and UPSC preparation.</p>
-    </section>
+        <!-- Preparation Info Section -->
+        <section id="prep-info" class="my-4">
+            <h2>Preparation Information</h2>
+            <p>Here you can provide content related to IAS, KAS, and UPSC preparation. © Basit Ahmad Ganie</p>
+        </section>
+    </div>
 
+    <!-- Bootstrap JS and custom script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="scripts.js"></script>
 </body>
 </html>

@@ -1,18 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
     const pdfList = document.getElementById('pdf-list');
 
-    // Assuming you have a list of PDFs to add
+    // List of PDFs (update this with actual PDF file names and paths)
     const pdfs = [
-        { name: 'World History Pre-Era', url: 'pre-historic_era.pdf' },
-        { name: 'India And The Contemprary World Pre-Era', url: 'India_and_the_contemporary_world.pdf' }
+        { name: 'UPSC Syllabus', url: 'pdfs/pre-historic_era.pdf uploaded ' },
+        { name: 'IAS Study Material', url:'pdfs/India_and_the_contemporary_world.pdf' },
+        { name: 'KAS Preparation Guide', url: 'pdfs/kas-prep-guide.pdf' }
     ];
 
+    // Dynamically create PDF list
     pdfs.forEach(pdf => {
         const listItem = document.createElement('li');
+        listItem.className = 'list-group-item';
+        
         const link = document.createElement('a');
         link.href = pdf.url;
         link.textContent = pdf.name;
         link.target = '_blank';
+
         listItem.appendChild(link);
         pdfList.appendChild(listItem);
     });
@@ -27,6 +32,5 @@ function uploadFile() {
         return;
     }
 
-    // You need a server-side script to handle file uploads; this is just a placeholder
-    uploadStatus.textContent = 'File upload functionality is not yet implemented.';
+    uploadStatus.textContent = 'File upload functionality is not supported on GitHub Pages.';
 }
