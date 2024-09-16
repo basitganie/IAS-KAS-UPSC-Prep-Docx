@@ -1,11 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     const pdfList = document.getElementById('pdf-list');
 
-    // List of PDFs with valid file paths
+    // Updated list of PDFs with actual file names
     const pdfs = [
-        { name: 'UPSC Syllabus', url: 'pdfs/pre-historic_era.pdf' },
-       // { name: 'IAS Study Material', url: 'pdfs/ias-study-material.pdf' }, // Update this to a valid PDF name
-        { name: 'KAS Preparation Guide', url: 'pdfs/India_and_the_contemporary_world.pdf' }
+        { name: 'Pre-Historic Era', url: 'pdfs/pre-historic_era.pdf' },
+        { name: 'India and the Contemporary World', url: 'pdfs/India_and_the_contemporary_world.pdf' }
     ];
 
     // Dynamically create PDF list with viewer and download option
