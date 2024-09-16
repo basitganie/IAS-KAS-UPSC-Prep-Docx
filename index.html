@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IAS/KAS/UPSC Preparation</title>
+    <title>IAS Prep Documents</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <h1>IAS/KAS/UPSC Preparation</h1>
-        <h4>By Basit Ahmad Ganie</h4>
         <h2>View and Download PDFs</h2>
 
         <ul>
@@ -24,10 +25,35 @@
                 <a href="pdfs/India_and_the_contemporary_world.pdf" download>Download India and the Contemporary World PDF</a>
             </li>
         </ul>
+        </header>
 
-        <footer>
-            <p>© Basit Ahmad Ganie.</p>
-        </footer>
+        <!-- View PDFs Section -->
+        <section id="view-pdfs" class="my-4">
+            <h2>View and Download PDFs</h2>
+            <ul id="pdf-list" class="list-group">
+                <!-- PDF links and viewers will be dynamically inserted here -->
+            </ul>
+        </section>
+
+        <!-- Upload PDFs Section -->
+        <section id="upload-pdf" class="my-4">
+            <h2>Upload PDF</h2>
+            <div class="mb-3">
+                <input class="form-control" type="file" id="fileInput" />
+            </div>
+            <button class="btn btn-success" onclick="uploadFile()">Upload</button>
+            <p id="uploadStatus"></p>
+        </section>
+
+        <!-- Preparation Info Section -->
+        <section id="prep-info" class="my-4">
+            <h2>Preparation Information</h2>
+            <p>Here you can provide content related to IAS, KAS, and UPSC preparation. You can add links, resources, and tips to guide aspirants.</p>
+        </section>
     </div>
+
+    <!-- Bootstrap JS and custom script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
