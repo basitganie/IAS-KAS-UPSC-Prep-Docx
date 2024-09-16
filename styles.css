@@ -17,6 +17,10 @@ nav a {
     margin: 0 10px;
 }
 
+#pdf-list iframe {
+    margin-top: 15px;
+}
+
 #pdf-list a {
     text-decoration: none;
     color: #007bff;
