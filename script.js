@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     const pdfList = document.getElementById('pdf-list');
 
-    // List of PDFs (update this with actual PDF file names and paths)
+    // List of PDFs with valid file paths
     const pdfs = [
         { name: 'UPSC Syllabus', url: 'pdfs/pre-historic_era.pdf' },
-        { name: 'IAS Study Material', url: 'pdfs/' },
+       // { name: 'IAS Study Material', url: 'pdfs/ias-study-material.pdf' }, // Update this to a valid PDF name
         { name: 'KAS Preparation Guide', url: 'pdfs/India_and_the_contemporary_world.pdf' }
     ];
 
@@ -37,15 +37,3 @@ document.addEventListener('DOMContentLoaded', () => {
         pdfList.appendChild(listItem);
     });
 });
-
-function uploadFile() {
-    const fileInput = document.getElementById('fileInput');
-    const uploadStatus = document.getElementById('uploadStatus');
-
-    if (fileInput.files.length === 0) {
-        uploadStatus.textContent = 'Please select a file to upload.';
-        return;
-    }
-
-    uploadStatus.textContent = 'File upload functionality is not supported on GitHub Pages.';
-}
