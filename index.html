@@ -237,12 +237,17 @@
 
     <!-- Upload Section -->
     <section id="upload">
-        <h2>Upload PDF</h2>
-        <div class="container">
-            <input class="form-control mb-3" type="file" id="fileInput" />
-            <button class="btn btn-success">Upload</button>
-            <p id="uploadStatus"></p>
-        </div>
+        <form action="https://formspree.io/f/xpwzwdpy"
+  method="POST"
+  enctype="multipart/form-data"
+>
+           <h2>Upload PDF</h2>
+           <div class="container">
+               <input class="form-control mb-3" type="file" id="fileInput" />
+               <button class="btn btn-success">Upload</button>
+               <p id="uploadStatus"></p>
+           </div>
+        </form>    
     </section>
 
     <!-- Info Section -->
